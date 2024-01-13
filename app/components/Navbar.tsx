@@ -31,10 +31,9 @@ const NavBar = () => {
         <Divider orientation="vertical"  variant="middle"  flexItem  />    
         <Box sx={{marginLeft:'10px', flexGrow: 1 , display: 'flex' ,justifyContent:'start'}}>
         
-        {navItems.map(item=> 
-        
+        {navItems.map(item=>  
         <Box key={item.name} marginX={1} display={{ md: 'block', xs: 'none' }}>
-        <Link key={item.name} color='black' href={item.link} 
+        <Link key={item.name} color='black' href={item.link}  
         style = {{ textDecoration: 'none'}}> { item.name } </Link>
         </Box>)}</Box>
         
